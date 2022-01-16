@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="global.css" />
+
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app" class="p-12 text-xs">
+      <div class="flex flex-col space-y-16">
+        <h1 class="text-3xl">Buttons:</h1>
+        <div class="flex space-x-12 text-xl" id="buttons-1">
+          <button class="btn">Button</button>
+          <button class="btn bg-blue-500 text-white hover:bg-blue-600">
+            Button
+          </button>
+          <button
+            class="btn bg-blue-500 text-white hover:bg-gradient-to-r hover:from-blue-500 hover:to-green-500"
+          >
+            Button
+          </button>
+          <button
+            class="btn bg-red-500 text-white hover:bg-gradient-to-r hover:from-red-500 hover:to-yellow-500"
+          >
+            Button
+          </button>
+        </div>
+        <div class="flex space-x-12 text-xl" id="buttons-transitions">
+          <button
+            class="btn bg-blue-500 text-white hover:bg-blue-700 hover:transition-colors hover:duration-1000"
+          >
+            Button
+          </button>
+          <button
+            class="btn transform duration-300 bg-blue-500 text-white hover:bg-gradient-to-r hover:from-blue-500 hover:to-green-500 hover:scale-110"
+          >
+            Button
+          </button>
+          <button
+            class="btn bg-red-500 text-white hover:bg-gradient-to-r hover:from-red-500 hover:to-yellow-500 hover:skew-y-3 transform duration-200"
+          >
+            Button
+          </button>
+          <button
+            class="btn bg-yellow-500 text-white hover:-translate-y-1 transform transition-all duration-500"
+          >
+            Button
+          </button>
+          <button
+            class="btn text-white transition-all duration-500 bg-gradient-to-br to-green-500 via-blue-500 from-purple-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
+          >
+            Button
+          </button>
+        </div>
+        <div class="flex space-x-12 text-xl" id="buttons-transitions">
+          <button
+            class="transition-all transform duration-100 hover:border-none bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
+          >
+            Button
+          </button>
+        </div>
+        <h1 class="text-3xl">Buttons 2:</h1>
+
+        <div class="flex space-x-12 text-xl" id="buttons-2">
+            <button class="btn-2 text-white bg-blue-500 shadow-blue-500/50">Button</button>
+            <button class="btn-2 text-white bg-emerald-500 shadow-emerald-500/50">Button</button>
+            <button class="btn-2 text-white bg-cyan-500 shadow-cyan-500/50">Button</button>
+
+        </div>
+
+        <h1 class="text-3xl">Inputs:</h1>
+
+        <div id="inputs" class="flex flex-col space-y-6">
+          <textarea class="input resize-none"></textarea>
+          <input class="input" />
+        </div>
+
+        <h1 class="text-3xl">Other Inputs:</h1>
+
+        <div id="inputs" class="flex flex-col space-y-6">
+          <select class="select">
+            <option>Cat</option>
+            <option>Dog</option>
+            <option>Ferret :)</option>
+          </select>
+          <input class="checkbox w-8 h-8" type="checkbox" />
+        </div>
+
+        <h1 class="text-3xl">Badges:</h1>
+
+        <div id="badges" class="flex flex-col space-y-6">
+          <p class="badge max-w-xs bg-green-500 text-white">NEW</p>
+          <p class="badge max-w-xs bg-red-500 text-white">REDACTED</p>
+          <p class="badge max-w-xs bg-gray-500 text-white">SOLD</p>
+        </div>
+
+        <h1 class="text-3xl">Cards:</h1>
+
+        <div id="cards" class="flex flex-col space-y-6">
+          <div class="card max-w-md space-y-2">
+            <h1 class="card-title">Title</h1>
+            <p class="card-body">
+                Lorem ipsum blah blah blah.
+            </p>
+          </div>
+          <div class="card max-w-md space-y-2 blur-sm hover:blur-none">
+            <h1 class="card-title">Title</h1>
+            <p class="card-body">
+                Lorem ipsum blah blah blah.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

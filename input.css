@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn {
+        @apply py-3 focus:ring-2 focus:ring-blue-300 focus:outline-none px-5 font-semibold rounded-lg shadow-md ;
+    }
+    
+    .btn-2 {
+        @apply py-3 px-5 focus:outline-none rounded-lg shadow-xl hover:brightness-110;
+    }
+
+    .input {
+        @apply text-lg transition duration-300 border border-black rounded-md shadow-lg px-2 py-1 focus:ring-2 focus:ring-blue-500 outline-none;
+    }
+
+    .select {
+        @apply border border-black rounded-lg shadow-lg p-2;
+    }
+
+    .checkbox {
+        @apply focus:ring-2 focus:ring-blue-300 transition-all transform;
+    }
+
+    .badge {
+        @apply p-2 capitalize border text-center text-sm rounded-lg text-gray-500 shadow-sm;
+    }
+
+    .card {
+        @apply p-4 border-2 rounded-lg hover:shadow-2xl hover:shadow-blue-500/50 transition-all transform;
+    }
+
+    .card-title {
+        @apply font-bold text-2xl;
+    }
+
+    .card-body {
+        @apply text-base;
+    }
+}

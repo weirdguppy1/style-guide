@@ -1,0 +1,12 @@
+{
+  "name": "style-guide",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.0.15"
+  },
+  "scripts": {
+    "dev": "npx tailwindcss -i ./input.css -o ./output.css --watch"
+  }
+}
